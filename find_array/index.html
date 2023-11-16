@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị trong mảng</title>
+</head>
+<body>
+<script>
+    let value = +prompt("nhập giá trị cần tìm trong mảng");
+    let num = [3, 4, 8, 25, 69, -5, 20];
+    let index = -1;
+
+    for (let i = 0; i < num.length; i++) {
+        if (value == num[i]){
+            index = i;
+        }
+    }
+    if (index >-1){
+        alert("value " + value + " found at " + index);
+    }
+    else {
+        alert("value " + value + " not found");
+    }
+</script>
+</body>
+</html>
